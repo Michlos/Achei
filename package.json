@@ -1,0 +1,22 @@
+{
+  "name": "achei-pra-vc",
+  "version": "1.0.0",
+  "description": "Projeto Achei Pra Voce by Evandro and Michlos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichlosBSB/Achei.git"
+  },
+  "author": "Michlos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichlosBSB/Achei/issues"
+  },
+  "homepage": "https://github.com/MichlosBSB/Achei#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
