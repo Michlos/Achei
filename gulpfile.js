@@ -7,8 +7,13 @@ gulp.task('sass', function () {
     return gulp.src('sass/**/*.sass')
     	.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(gulp.dest('css'));
+
 });
 
-gulp.task('sass:watch', function () {
-    gulp.watch('sass/**/*.sass', ['sass']);			
+gulp.task('watch', function () {
+	gulp.src('sass/**/*.sass')
+		.pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
+		.pipe(gulp.dest('css'));
+    gulp.watch('sass/**/*.sass', ['css']);   	
+        
 });
