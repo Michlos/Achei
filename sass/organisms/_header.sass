@@ -1,4 +1,6 @@
 header
+	+clearfix
+		
 	.menu-navegacao
 		padding: 5px
 		width: 100%
@@ -12,13 +14,16 @@ header
 			li
 				display: inline-block
 				font-weight: $bold
+				padding: 25, 0, 25, 0
 
-				a
-					
+				a	
 					color: $verde-escuro
 					display: block
 					font-size: 15px
-					//font-weight: $regular
 					padding: 0px 12px
 					text-decoration: none
-					//text-transform: uppercase
+
+					&:hover
+						color: $verde-claro
+						text-deconration: blink !important
+						
