@@ -4,10 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Achei Pra Você</title>
 	<link rel="stylesheet" href="bower_components/components-font-awesome/css/fa-solid.css">
-
+	
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/busca.css">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 
 	
 </head>
@@ -50,22 +54,38 @@
 
 			<section class="resultado-busca">
 				<div class="lista">
-					<p>Resultado da Busca<p>
+					<p class="titulos-gerais">Resultado da Busca</p>
+
+					<div class="row titulo">
+						<div class="col-sm-4">Tipo de Documento</div>
+						<div class="col-sm-8">Nome Encontrado</div>
+					</div>
+					<div class="row conteudo">
+						<div class="col-sm-4"><a data-toggle="modal" data-target="#ModalDados" href="#ModalDados">Identidade</a></div>
+						<div class="col-sm-8"><a data-toggle="modal" data-target="#ModalDados" href="#ModalDados">Nome de Teste Para Conteúdo</a></div>
+					</div>
+
+				</div>
 
 
-					<div class="row">
-						<div class="col-4">
-							<div class="list-group" id="list-tab" role="tablist">
-								<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Nome</a>
-								<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-								<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
-								<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+				<!-- MODAL -->
+				<div class="modal fade" id="ModalDados" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+					<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title titulo-modal">Confirmação de Dados</h4>
+							</div>
+							<div class="modal-body">
+								<p>Para sabermos que você é quem diz ser e te dar acesso ao conteúdo do documento encontrado você precisa confirmar algumas informações:</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn" data-dismiss="modal">Fechar</button>
 							</div>
 						</div>
-						
 					</div>
-				</div>		
-
+				</div>				
 
 			</section>
 
