@@ -7,7 +7,7 @@
 
 	<link rel="stylesheet" href="css/geral.css">
 	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/busca.css">
 
 	
 </head>
@@ -27,7 +27,7 @@
 				</ul>
 			</nav>
 		</div>
-	
+
 	</header>
 
 	<main>
@@ -46,6 +46,27 @@
 					<input class="form-control" type="search" id="busca-documento" name="busca" placeholder="Pesquisar Documento">
 					<button type="submit" class="btn btn-success"><i class="fas fa-search"></i></button>
 				</form>
+			</section>
+
+			<section class="resultado-busca">
+				<div class="lista">
+					<p>Resultado da Busca<p>
+
+
+					<div class="row">
+						<div class="col-4">
+							<div class="list-group" id="list-tab" role="tablist">
+								<a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Nome</a>
+								<a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+								<a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+								<a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>		
+
+
 			</section>
 
 
